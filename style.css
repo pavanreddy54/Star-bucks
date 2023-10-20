@@ -1,6 +1,10 @@
 :root{
     --starbucks-clr:#00653d;
 }
+*{
+    margin: 0;
+    padding: 0;
+}
 body{
     font-family: 'Alegreya Sans SC', sans-serif;
 }
@@ -11,6 +15,7 @@ body{
     margin-left:13vh;
     margin-right: 20vh;
     justify-content: space-between;
+    margin-bottom: 5vh;
  
     
 }
@@ -61,6 +66,20 @@ nav ul li:hover a {
     color: white; 
 }
 /*-------------------------- Typing Animation Text ------------------------------*/
+.main{
+    margin-top: 0vh;
+}
+.its, .static {
+    font-size: 40px;
+    text-transform: lowercase;
+    font-family: 'Alegreya Sans SC', sans-serif;
+    color: #323232;
+    margin-top: 0;
+    margin-bottom: 0; 
+}
+.static{
+    margin-top: 11px;
+}
 .wrapper{
     display:flex;
 }
@@ -70,33 +89,35 @@ nav ul li:hover a {
     list-style: none;
     padding: 0;
     margin: 0;
-    height: 40px;
+    height: 60px;
     overflow: hidden;
     
 }
 .dynamic li{
-    margin-left: 10px;
-    margin-bottom: 8px;
+    margin: 0 0 0 15px;
     color: var(--starbucks-clr);
-    font-family: 'Alegreya Sans SC', sans-serif;
-    font-weight: bold;
+    font-size: 48px;
+    font-family: 'Kanit','Alegreya Sans SC', sans-serif;
     position: relative;
     top:0;
-    
+
     animation: slide 6s steps(4) infinite;
 }
 .dynamic li span{
     position: relative;
+    margin:0;
+    padding: 0;
     
 }
 .dynamic li span::after{
     content: '';
+
     position:absolute;
     height: 100%;
     width:100%;
     background-color: white;
     left:0;
-    border-left:2px solid var(--starbucks-clr);
+    border-left:8px solid var(--starbucks-clr);
 
     animation:typing 1.5s steps(16) infinite;
 
@@ -107,12 +128,15 @@ nav ul li:hover a {
     }
 }@keyframes slide{
     100%{
-        top:-177px;
+        top:-300px;
     }
 }
-.para{
-    width: 350px;
+.para {
+    margin-top: 0; 
+    width: 700px;
     word-wrap: normal;
+    font-size: 1.5rem;
+    color: #323232;
 }
 .main{
     margin-top: 15vh;
