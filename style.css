@@ -188,4 +188,43 @@ nav ul li:hover a {
     100%{
         transform: translateY(-15px);
     }
+}.inside_con{
+    display: flex;
+    align-items: center;
+    border-radius: 100% 0% 100% 0% / 100% 100% 0% 0%  ;
+    background-color: var(--starbucks-clr);
+    height:500px;
+    width: 600px;
+    z-index: 2;
+    top: 23%;
+    left:114vh;
+    position: absolute;
+}.setpos{
+    position: absolute;
+    top:38%;
+    left: 125vh;
+    z-index: 3;
+    animation: imagemove 10s ease-in-out infinite ;
+}@keyframes imagemove{
+    50%{
+        transform: translateY(-20%);
+    }100%{
+        transform: translateY(0%);
+    }
+} .in-inside{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    z-index: 3;
+    align-items: center;
+    width: fit-content;
+    color:white;
+    background-color: var(--starbucks-clr);
+    position: absolute;
+    top: 38%;
+    left: 198vh;
+
+
+}svg{
+    margin: 8px;
 }
