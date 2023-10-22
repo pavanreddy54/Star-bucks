@@ -158,3 +158,34 @@ nav ul li:hover a {
     color: var(--starbucks-clr);
     box-shadow: 0px 0px 0px;
 }
+/* footer */
+.footer{
+    display: flex;
+    width:800px;
+    
+    margin-top: 10vh;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 1.7rem;
+}a>img{
+    width:60px;
+    margin: 0px 10px 0px 10px;
+}
+.footer a:hover{
+    animation: moveimg 0.5s ease-in-out 1 forwards ;
+}.comp{
+    border-width: 0px 3px 0px 3px;
+    padding: 0px 10px;
+    margin: 0px 10px 0px 10px;
+    border-color: black;
+    border-style: solid;
+    font-family: 'Kanit','Alegreya Sans SC', sans-serif;
+    color:var(--starbucks-clr); 
+    font-size: 2rem;
+    text-shadow: 1px 2px #323232;
+}
+@keyframes moveimg {
+    100%{
+        transform: translateY(-15px);
+    }
+}
